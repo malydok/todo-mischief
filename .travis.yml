@@ -1,9 +1,16 @@
 language: node_js
 node_js:
-  - 6
+- 6
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run build
-  - npm test
+- npm run build
+- npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: rSRnyds/KtdVL6QHQ96be1lFQ8N0M5RXeVwXGHQl8YMQ1GRuX3aMFm6XDAoObxruP5aGUKlvmayEpAALRpG5KMOy8MEiigOPvxnLnsYsYiDNn6e1BbYbQerOSC8MusYQRxYc4xoyquqbgEeA5yhR3Nf8vbrfx/NkVhJ/xuHkxYK9rVbUmM9qYISFe5TDuJCJOBCkfcSKYLDMz6MH7rMNXbeDk3uW1DJmn2grWWDv9DMK9YpNL4ZwsDIkpovhrPsspwSRYWljfrpgTKblgNThl1HQvoTca45SRnIaIBUWQkd+V+XvaYaYSab96+jRsSmbH2uiNpXWCWHYQFE4uj21tnttM0wB+ZHwFKYpOHv57uO53iiGLqZtMwgxOmHu0h0yHeDjlqM+8TJslZ+yXbD0zJeyC89I8ln9bt18jKmu41pNM5+j/0cYdPO++hZA7jgJQoSPsiU+cg2anmb+npeN+xAuWiG2/fEkYnX4DSucc80eTIgtrA2S8csVtmU/YcwJ8ZTJk2sSkX7bkDB/l+2aQbeO9qaI2MjaNIgKeJF/0nM2lRfO6kIlU2OHBg+cMLe+eZLLiCT3z2ZiNj0kOZMf8KwVhOw4eGX4xME+t3UNA6397YP3N4bBCyxJqfjJmy9SZi2AonXts6pC8P51ohyp7evOTpoEbtG7EY7PfK0w0Mg=
+  app: todo-mischief
+  on:
+    repo: malydok/todo-mischief
