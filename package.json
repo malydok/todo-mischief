@@ -1,6 +1,7 @@
 {
   "name": "todo-mischief",
   "version": "0.1.0",
+  "homepage": "https://todo-mischief.firebaseapp.com/",
   "private": true,
   "devDependencies": {
     "react-scripts": "1.1.1"
